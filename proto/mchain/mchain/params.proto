@@ -1,0 +1,12 @@
+syntax = "proto3";
+package mchain.mchain;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "mchain/x/mchain/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+package mchain.mchain;
+
+import "gogoproto/gogo.proto";
+import "mchain/mchain/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "mchain/x/mchain/types";
+
+// GenesisState defines the mchain module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
